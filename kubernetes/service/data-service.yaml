@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: "data-service"
+spec:
+  selector:
+    app: "data-service"
+  ports:
+    - protocol: "TCP"
+      port: 8083
+      targetPort: 8083

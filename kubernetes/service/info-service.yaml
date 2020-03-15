@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: "info-service"
+spec:
+  selector:
+    app: "info-service"
+  ports:
+    - protocol: "TCP"
+      port: 8082
+      targetPort: 8082
